@@ -1,8 +1,8 @@
 import { Route } from '@angular/router';
 import { FoodListComponent } from './food-list/food-list.component';
 import { FoodsComponent } from './foods.component';
-import { FormFoodComponent } from './form-food/form-food.component';
-import { DetailsFoodComponent } from './details-food/details-food.component';
+import { FoodFormComponent } from './food-form/food-form.component';
+import { DetailFoodComponent } from './detail-food/detail-food.component';
 
 export default [
   {
@@ -12,17 +12,17 @@ export default [
   },
   {
     path:'form',
-    component:FormFoodComponent,
+    component:FoodFormComponent,
     title:'Crear comida'
   },
   {
     path:'details-food/:id',
-    component:DetailsFoodComponent,
+    component:DetailFoodComponent,
     title:'Detalles'
   },
   {
     path:'form/:id',
-    component:FormFoodComponent,
+    component:FoodFormComponent,
     title:'Actualizar comida'
   }
 

@@ -15,7 +15,7 @@ import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-form-food',
+  selector: 'app-food-form',
   standalone: true,
   imports: [
     MatFormFieldModule,
@@ -27,10 +27,10 @@ import { MatIcon } from '@angular/material/icon';
     RouterModule,
     MatIcon,
   ],
-  templateUrl: './form-food.component.html',
-  styleUrl: './form-food.component.scss',
+  templateUrl: './food-form.component.html',
+  styleUrl: './food-form.component.scss',
 })
-export class FormFoodComponent implements OnInit {
+export class FoodFormComponent implements OnInit {
   form = this.formBuilder.group({
     name: ['', [Validators.required]],
     description: ['', [Validators.required, Validators.minLength(20)]],

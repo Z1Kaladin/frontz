@@ -10,7 +10,7 @@
         <div class="example-container pb-2">
             <mat-form-field class="w-full" appearance="outline">
                 <mat-label>Nombre</mat-label>
-                <input matInput placeholder="ejem.Pizza" formControlName="name" required>
+                <input matInput placeholder="ejem.Tacos" formControlName="name" required>
                 @if (name?.invalid && (name?.dirty || name?.touched)) {
                 <mat-error>
                     @if (name?.hasError('required')) {
@@ -24,7 +24,7 @@
         <div class="example-container pb-2">
             <mat-form-field class="w-full" appearance="outline">
                 <mat-label>Descripción</mat-label>
-                <textarea matInput placeholder="ejem.Pizza" formControlName="description" required></textarea>
+                <textarea matInput placeholder="ejem.Pizza super deliciosa de peperoni con rico queso" formControlName="description" required></textarea>
                 @if (description?.invalid && (description?.dirty || description?.touched)) {
                 <mat-error>
                     @if (description?.hasError('required')) {

@@ -8,13 +8,13 @@ import { MatIcon } from '@angular/material/icon';
 import { CurrencyPipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
 
 @Component({
-  selector: 'app-details-food',
+  selector: 'app-detail-food',
   standalone: true,
   imports: [RouterModule, MatButtonModule,MatCardModule,MatIcon, UpperCasePipe, TitleCasePipe, CurrencyPipe],
-  templateUrl: './details-food.component.html',
-  styleUrl: './details-food.component.scss'
+  templateUrl: './detail-food.component.html',
+  styleUrl: './detail-food.component.scss'
 })
-export class DetailsFoodComponent implements OnInit {
+export class DetailFoodComponent implements OnInit {
 
   constructor(private activeRoute:ActivatedRoute, public serviceFood:FoodService){
   }
