@@ -1,0 +1,40 @@
+<div class="flex flex-row gap-6">
+    <mat-card class="max-w-xl">
+        <img mat-card-image src="{{food?.image}}" alt="Photo of a Shiba Inu">
+        <mat-card-header>
+
+            <mat-card-title class="!text-2xl">{{food?.name | titlecase}}</mat-card-title>
+            <mat-card-subtitle>
+                <mat-icon color="accent">star</mat-icon>
+                <mat-icon color="accent">star</mat-icon>
+                <mat-icon color="accent">star</mat-icon>
+                <mat-icon color="accent">star</mat-icon>
+                <mat-icon color="accent">star</mat-icon>
+            </mat-card-subtitle>
+
+            <mat-card-subtitle>{{food?.price | currency:'MXN'}} - {{food?.category| titlecase }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+            <p>
+                {{food?.description}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+
+    <div class="flex flex-col gap-4">
+        <button mat-raised-button color="primary" extended>Actualizar
+            <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-raised-button color="accent" extended>Añadir nueva comida
+            <mat-icon>add</mat-icon>
+        </button>
+        <button mat-raised-button color="warn" extended>Borrar
+            <mat-icon>delete</mat-icon>
+
+        </button>
+    </div>
+
+
+
+</div>
